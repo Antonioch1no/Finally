@@ -1,0 +1,115 @@
+@media (max-width: 600px) {
+	.navCategory {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+		margin: 2px;
+	}
+}
+
+.imgHome {
+	background-color: white;
+	background-size: 500px;
+	padding: 5%;
+}
+
+.relatesImg {
+}
+.img-fluid {
+	padding: 5px;
+}
+.relatesImg1 {
+	background-color: white;
+	background-size: 50px;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+}
+@media (max-width: 600px) {
+	.relatesImg {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.img-fluid {
+		max-width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+}
+.cart {
+	position: relative;
+	right: -800px;
+}
+@media (max-width: 1024px) {
+	.cart {
+		position: relative;
+		right: -600px;
+	}
+}
+@media (max-width: 600px) {
+	.cart {
+		position: relative;
+
+		left: 280px;
+	}
+}
+
+.spinner {
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lds-ripple {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-ripple div {
+	position: absolute;
+	border: 4px solid #fff;
+	opacity: 1;
+	border-radius: 50%;
+	animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+	animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+	0% {
+		top: 36px;
+		left: 36px;
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+	4.9% {
+		top: 36px;
+		left: 36px;
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+	5% {
+		top: 36px;
+		left: 36px;
+		width: 0;
+		height: 0;
+		opacity: 1;
+	}
+	100% {
+		top: 0px;
+		left: 0px;
+		width: 72px;
+		height: 72px;
+		opacity: 0;
+	}
+}
